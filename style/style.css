@@ -1,0 +1,379 @@
+@import url(./normalize.css);
+
+.container {
+  background-color: #fff;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  min-width: 375px;
+}
+
+.header {
+  padding-top: 48px;
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.header__link-list {
+  margin: 0;
+  padding: 23px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.header__link {
+  font-size: 13px;
+  line-height: 16px;
+  color: #999999;
+  text-decoration: none;
+  border-bottom: 1px solid #e6edff;
+}
+
+.header__list-element::after {
+  content: "→";
+  color: #999999;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0 8px;
+}
+
+.header__list-element:last-of-type::after {
+  content: "";
+  margin: 0px;
+}
+
+.content {
+  background-color: #f5f5f8;
+  border-radius: 16px;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead__title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.lead__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 23px 0 0;
+}
+
+.lead__menu-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.lead__list-element {
+  margin-right: 24px;
+}
+
+.lead__list-element:last-of-type {
+  margin: 0;
+}
+
+.lead__menu-link_type_active {
+  color: #5a8cf1;
+  padding-bottom: 19px;
+  border-bottom: 2px solid #5a8cf1;
+}
+
+.subscribe__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #000000;
+  padding: 65px 0 24px;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding: 0 48px;
+}
+
+.form__input_type_email {
+  font-size: 16px;
+  line-height: 24px;
+  border: 0;
+  padding: 16px 0px 16px 16px;
+  width: calc(100%);
+  border-radius: 8px 100px 100px 8px;
+}
+
+.form__btn {
+  background: #316fee;
+  border-radius: 100px;
+  width: 163px;
+  height: 56px;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: 48px;
+  color: #fff;
+}
+
+.form__btn-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 24px;
+  top: 17px;
+  right: 80px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* .form__input_type_email::after{
+  content: "sdjlhgs;";
+  /* position: absolute; 
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 10px solid gold;
+  z-index: 100;
+  color: green;
+} */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 24px;
+  padding: 32px 24px 48px;
+}
+.card {
+  max-width: 476px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+.card__read-time {
+  font-size: 13px;
+  line-height: 16px;
+  color: #999999;
+  margin: 0;
+}
+.card__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+.card__img {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.card__subtitle {
+  margin: 0;
+  color: #666666;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: calc(100% - 104px);
+  padding: 9px 0 16px;
+}
+.card__advantage-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card__check {
+  background-image: url(../images/check.svg);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+.card__advantage {
+  padding: 0 0 8px 24px;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer__logo {
+  padding: 48px 0;
+}
+
+.checkbox__container {
+  display: flex;
+  flex-direction: row;
+  padding: 18px 0 0 48px;
+}
+
+.checkbox__container_type_card {
+  padding: 7px 0 0;
+}
+.checkbox__lable {
+  padding-left: 8px;
+}
+
+.checkbox__lable_type_card {
+  padding-top: 3px;
+}
+.checkbox {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  appearance: none;
+  background: #dcdcdc;
+  outline: none;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+.checkbox:checked {
+  background: #316fee;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+  top: 1px;
+  left: 1px;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.checkbox:checked::before {
+  left: 25px;
+}
+.checkbox__subscribe {
+  width: 32px;
+  height: 16px;
+}
+.checkbox__subscribe::before {
+  width: 14px;
+  height: 14px;
+}
+.checkbox__subscribe:checked::before {
+  left: 17px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    max-width: calc(100vw - 32px);
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px 0px;
+    padding: 24px 16px 48px;
+  }
+
+  .card {
+    padding: 24px 16px;
+    margin: 0 auto;
+  }
+
+  .card__img {
+    width: 40px;
+    right: 16px;
+  }
+
+  .card__subtitle {
+    max-width: 100%;
+  }
+
+  .header {
+    padding-top: 25px;
+  }
+
+  .header__link-list {
+    padding: 24px 0 8px;
+  }
+  .lead__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .lead__list-element {
+    margin-right: 16px;
+  }
+  .lead__menu-link {
+    padding: 0 8px 19px;
+  }
+
+  .subscribe__title {
+    padding: 48px 0 16px;
+    margin: 0 auto;
+    max-width: calc(100% - 32px);
+    text-align: left;
+  }
+  .form {
+    padding: 0 16px;
+  }
+  .form__btn {
+    right: 16px;
+    width: 56px;
+  }
+  .form__btn-text {
+    background-image: url(../images/Arrow.svg);
+    background-repeat: no-repeat;
+    top: 17px;
+    right: -43px;
+    color: transparent;
+    
+  }
+  .checkbox__container {
+    padding-left: 16px;
+  }
+  .checkbox__container_type_card {
+    padding: 15px 0 0;
+  }
+
+  .checkbox__lable_type_card {
+    padding: 3px 0 0 16px;
+  }
+
+  .footer__logo {
+    padding: 32px 0;
+  }
+}

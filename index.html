@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/png">
+  <title>Клерк</title>
+</head>
+
+<body class="container">
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/klerkLogo.svg" alt="Лого">
+      <ul class="header__link-list">
+        <li class="header__list-element"><a class="header__link" href="#">Главная</a></li>
+        <li class="header__list-element"><a class="header__link" href="#">Рассылки</a></li>
+        <li class="header__list-element"><a class="header__link" href="#">Хлебные крошки</a></li>
+      </ul>
+    </header>
+    <main class="content">
+      <section class="lead">
+        <h1 class="lead__title">Подписки «Клерка»</h1>
+        <ul class="lead__menu">
+          <li class="lead__list-element"><a class="lead__menu-link lead__menu-link_type_active" href="#">Рассылки</a></li>
+          <li class="lead__list-element"><a class="lead__menu-link" href="#">Соцсети</a></li>
+          <li class="lead__list-element"><a class="lead__menu-link" href="#">Мессенджеры</a></li>
+        </ul>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe__title">Выберите рассылки, которые подходят именно вам</h2>
+        <form class="form">
+          <input class="form__input_type_email" type="email" placeholder="Электронная почта">
+          <input class="form__btn" type="submit" value=""><span class="form__btn-text">Подписаться</span>
+          
+        </form>
+        <div class="checkbox__container">
+          <input class="checkbox checkbox__subscribe" type="checkbox">
+          <label class="checkbox__lable checkbox__lable_type_subscribe">Подписаться на все рассылки</label>
+        </div>
+
+
+        <div class="cards">
+          <div class="card">
+            <p class="card__read-time">Перед рассветом</p>
+            <h2 class="card__title">Утренний бухгалтер</h2>
+            <img class="card__img" src="./images/card1img.jpg" alt="Логотип карточки">
+            <h3 class="card__subtitle">Самые важные новости и события за день. Кратко, по делу, структурировано.</h3>
+            <ul class="card__advantage-list">
+              <li class="card__advantage"><span class="card__check"></span>Новости для бухгалтеров, ИП и директора</li>
+              <li class="card__advantage"><span class="card__check"></span>Подборка статей за день</li>
+            </ul>
+            <div class="checkbox__container checkbox__container_type_card">
+              <input class="checkbox" type="checkbox" checked>
+              <label class="checkbox__lable checkbox__lable_type_card">Уже получает 9999 человек</label>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <p class="card__read-time">После заката</p>
+            <h2 class="card__title">Ночной бухгалтер</h2>
+            <img class="card__img" src="./images/card2img.jpg" alt="Логотип карточки">
+            <h3 class="card__subtitle">Самая краткая газета о налогах и бухучете в мире — современная рассылка для чтения.</h3>
+            <ul class="card__advantage-list">
+              <li class="card__advantage"><span class="card__check"></span>Анализ, оценка и только самое главное</li>
+              <li class="card__advantage"><span class="card__check"></span>Лучшие комменты юзеров в обзоре</li>
+            </ul>
+            <div class="checkbox__container checkbox__container_type_card">
+              <input class="checkbox" type="checkbox">
+              <label class="checkbox__lable checkbox__lable_type_card">Уже получает 9999 человек</label>
+            </div>
+          </div>
+
+
+
+
+          <div class="card">
+            <p class="card__read-time">Раз в две недели</p>
+            <h2 class="card__title">Ножницы скидок</h2>
+            <img class="card__img" src="./images/card3img.jpg" alt="Логотип карточки">
+            <h3 class="card__subtitle">Подборка самых выгодных и полезных спецпредложений от надежных компаний.</h3>
+            <ul class="card__advantage-list">
+              <li class="card__advantage"><span class="card__check"></span>Акции и скидки от лидеров рынка</li>
+              <li class="card__advantage"><span class="card__check"></span>Те, кто подписался – экономят много денег </li>
+            </ul>
+            <div class="checkbox__container checkbox__container_type_card">
+              <input class="checkbox" type="checkbox">
+              <label class="checkbox__lable checkbox__lable_type_card">Уже получает 9999 человек</label>
+            </div>
+
+          </div>
+
+
+          <div class="card">
+            <p class="card__read-time">По мере появления анонсов</p>
+            <h2 class="card__title">Чемодан вебинаров</h2>
+            <img class="card__img" src="./images/card4img.jpg" alt="Логотип карточки">
+            <h3 class="card__subtitle">Подборка с анонсами бесплатных вебинаров
+              на&nbspсамые топовые темы при участии экспертов.</h3>
+            <ul class="card__advantage-list">
+              <li class="card__advantage"><span class="card__check"></span>Никогда не пришлем платные вебинары</li>
+              <li class="card__advantage"><span class="card__check"></span>Подборка топовых тем для вебинаров</li>
+            </ul>
+            <div class="checkbox__container checkbox__container_type_card">
+              <input class="checkbox" type="checkbox">
+              <label class="checkbox__lable checkbox__lable_type_card">Уже получает 9999 человек</label>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footer__logo" src="./images/footerLogo.svg" alt="Лого">
+    </footer>
+  </div>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
