@@ -141,7 +141,6 @@
   position: absolute;
   top: 0;
   right: 48px;
-  color: #fff;
 }
 
 .form__btn-text {
@@ -152,18 +151,8 @@
   right: 80px;
   z-index: 1;
   pointer-events: none;
+  color: #fff;
 }
-
-/* .form__input_type_email::after{
-  content: "sdjlhgs;";
-  /* position: absolute; 
-  width: 100px;
-  height: 100px;
-  display: block;
-  border: 10px solid gold;
-  z-index: 100;
-  color: green;
-} */
 
 .cards {
   display: grid;
@@ -171,6 +160,7 @@
   gap: 24px 24px;
   padding: 32px 24px 48px;
 }
+
 .card {
   max-width: 476px;
   padding: 24px;
@@ -178,23 +168,27 @@
   border-radius: 16px;
   position: relative;
 }
+
 .card__read-time {
   font-size: 13px;
   line-height: 16px;
   color: #999999;
   margin: 0;
 }
+
 .card__title {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
   margin: 0;
 }
+
 .card__img {
   position: absolute;
   top: 24px;
   right: 24px;
 }
+
 .card__subtitle {
   margin: 0;
   color: #666666;
@@ -205,6 +199,7 @@
   max-width: calc(100% - 104px);
   padding: 9px 0 16px;
 }
+
 .card__advantage-list {
   list-style-type: none;
   margin: 0;
@@ -221,6 +216,7 @@
   top: 4px;
   left: 0;
 }
+
 .card__advantage {
   padding: 0 0 8px 24px;
   position: relative;
@@ -235,6 +231,7 @@
   display: flex;
   justify-content: center;
 }
+
 .footer__logo {
   padding: 48px 0;
 }
@@ -248,6 +245,7 @@
 .checkbox__container_type_card {
   padding: 7px 0 0;
 }
+
 .checkbox__lable {
   padding-left: 8px;
 }
@@ -255,6 +253,7 @@
 .checkbox__lable_type_card {
   padding-top: 3px;
 }
+
 .checkbox {
   position: relative;
   width: 48px;
@@ -286,14 +285,17 @@
 .checkbox:checked::before {
   left: 25px;
 }
+
 .checkbox__subscribe {
   width: 32px;
   height: 16px;
 }
+
 .checkbox__subscribe::before {
   width: 14px;
   height: 14px;
 }
+
 .checkbox__subscribe:checked::before {
   left: 17px;
 }
@@ -330,13 +332,16 @@
   .header__link-list {
     padding: 24px 0 8px;
   }
+
   .lead__title {
     font-size: 32px;
     line-height: 42px;
   }
+
   .lead__list-element {
     margin-right: 16px;
   }
+
   .lead__menu-link {
     padding: 0 8px 19px;
   }
@@ -347,24 +352,28 @@
     max-width: calc(100% - 32px);
     text-align: left;
   }
+
   .form {
     padding: 0 16px;
   }
+
   .form__btn {
     right: 16px;
     width: 56px;
   }
+
   .form__btn-text {
     background-image: url(../images/Arrow.svg);
     background-repeat: no-repeat;
     top: 17px;
     right: -43px;
     color: transparent;
-    
   }
+
   .checkbox__container {
     padding-left: 16px;
   }
+
   .checkbox__container_type_card {
     padding: 15px 0 0;
   }
@@ -376,4 +385,5 @@
   .footer__logo {
     padding: 32px 0;
   }
+
 }
