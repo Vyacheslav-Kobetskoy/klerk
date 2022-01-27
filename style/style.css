@@ -52,7 +52,7 @@
 
 .header__list-element:last-of-type::after {
   content: "";
-  margin: 0px;
+  margin: 0;
 }
 
 .content {
@@ -128,7 +128,7 @@
   line-height: 24px;
   outline: none;
   border: none;
-  padding: 16px 0px 16px 16px;
+  padding: 16px 0 16px 16px;
   width: calc(100%);
   border-radius: 8px 100px 100px 8px;
 }
@@ -277,7 +277,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
   border-radius: 100px;
   top: 1px;
   left: 1px;
