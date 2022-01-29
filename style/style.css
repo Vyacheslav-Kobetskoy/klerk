@@ -367,9 +367,10 @@
 
   .form__btn-text {
     background-image: url(../images/Arrow.svg);
+    background-position: right;
     background-repeat: no-repeat;
     top: 17px;
-    right: -43px;
+    right: 32px;
     color: transparent;
   }
 
